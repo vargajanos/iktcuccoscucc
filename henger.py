@@ -1,8 +1,26 @@
 from tkinter import *
+from tkinter import messagebox
 import math
 foablak=Tk()
 
 def térfogat():
+    var=mezo1.get()
+    if len(var) == 0:
+        messagebox.showerror('Error', 'A mező üres')
+    else:
+        pass
+    var = int(var)
+    var=mezo2.get()
+    if len(var) == 0:
+        messagebox.showerror('Error', 'A mező üres')
+    else:
+        pass
+    var = int(var)
+    var=mezo3.get()
+    if len(var) == 0:
+        messagebox.showerror('Error', 'A mező üres')
+    else:
+        pass
     a=float(mezo1.get())
     b=float(mezo2.get())
     V = a**2 * b * math.pi
@@ -10,6 +28,23 @@ def térfogat():
     mezo3.insert(0,''+str("%.2f" % V)+' cm3' )
 
 def tomeg():
+    var=mezo1.get()
+    if len(var) == 0:
+        messagebox.showerror('Error', 'A mező üres')
+    else:
+        pass
+    var = int(var)
+    var=mezo2.get()
+    if len(var) == 0:
+        messagebox.showerror('Error', 'A mező üres')
+    else:
+        pass
+    var = int(var)
+    var=mezo3.get()
+    if len(var) == 0:
+        messagebox.showerror('Error', 'A mező üres')
+    else:
+        pass
     p=7.8
     a=float(mezo1.get())
     b=float(mezo2.get())   
@@ -19,6 +54,23 @@ def tomeg():
     mezo4.insert(0,''+str("%.2f" % m)+' g')
 
 def tomeg2():
+    var=mezo1.get()
+    if len(var) == 0:
+        messagebox.showerror('Error', 'A mező üres')
+    else:
+        pass
+    var = int(var)
+    var=mezo2.get()
+    if len(var) == 0:
+        messagebox.showerror('Error', 'A mező üres')
+    else:
+        pass
+    var = int(var)
+    var=mezo3.get()
+    if len(var) == 0:
+        messagebox.showerror('Error', 'A mező üres')
+    else:
+        pass
     d=0.7
     a=float(mezo1.get())
     b=float(mezo2.get())   
