@@ -30,7 +30,7 @@ def terfogat():
 
     if r>0 and m>0 and borocska>0:
         terfogat = round(math.pi * r * r * m)
-        liter=round(0.001*terfogat)
+        liter=round(terfogat/1000)
         mezo3.delete(0, END)
         mezo3.insert(0, str(liter)+' l')
         telitett=0
@@ -90,7 +90,7 @@ cimke5.grid(row=6, column=1, sticky="e")
 mezo5=Entry(foablak)
 mezo5.grid(row=6, column=2, columnspan=4)
 
-cimke6=Label(foablak, text="Telítetség:")
+cimke6=Label(foablak, text="Telítettség:")
 cimke6.grid(row=7, column=1, sticky="e")
 mezo6=Entry(foablak)
 mezo6.grid(row=7, column=2, columnspan=4)
